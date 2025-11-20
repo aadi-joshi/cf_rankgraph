@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Rating+Rank Graph",
+  "version": "1.0",
+  "description": "Adds rank to the Codeforces rating graph.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/profile/*",
+        "http://codeforces.com/profile/*"
+      ],
+      "js": ["jquery.js", "flot.js", "flot.time.js", "content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
